@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+
+    <solid android:color="@color/streets_city_name_bg_color" />
+    <corners
+        android:bottomRightRadius="@dimen/street_city_name_title_radius"
+        android:topRightRadius="@dimen/street_city_name_title_radius" />
+    <size android:height="@dimen/street_city_name_title_height" />
+
+</shape>

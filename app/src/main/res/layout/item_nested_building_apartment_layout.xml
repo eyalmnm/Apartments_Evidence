@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/nested_building_app_card_padding"
+    android:layout_gravity="bottom">
+    <LinearLayout
+        android:layout_width="@dimen/nested_building_apartment_item_width"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="bottom">
+        <TextView
+            android:id="@+id/apartmentItemTitleTextView"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/nested_building_apartment_item_height"
+            android:background="@drawable/app_bg_shape"
+            android:backgroundTint="@color/buildings_grid_item_bg_color"
+            android:text="5"
+            android:gravity="center"
+            android:textSize="@dimen/apartment_action_ok_size"
+            android:textColor="@color/buildings_city_name_text_color"
+            android:textStyle="bold" />
+
+        <View
+            android:id="@+id/apartmentItemIndicatorView"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/nested_building_apartment_item_indicator_height"
+            android:background="@drawable/app_line_shape"
+            />
+    </LinearLayout>
+</FrameLayout>

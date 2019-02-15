@@ -1,0 +1,38 @@
+[
+  {
+    "id": "8f39e609-e78b-49cc-a3de-623fc7332ecd",
+    "title": "How do you do?",
+    "type": "radio",
+    "answers": [
+      {
+        "id": "f17e3746-a21f-418f-8d7a-7731c5de150c",
+        "title": "Nothing"
+      }
+    ]
+  },
+  {
+    "id": "b05f1906-7060-421d-b9bd-2b2b9c3877eb",
+    "title": "Cit ii ora, Baietele?",
+    "type": "datetime",
+    "answers": []
+  },
+  {
+    "id": "d6f70fc8-488c-4b83-9ead-cb75f1d15181",
+    "title": "Vreai sa te conectezi la Starnet?",
+    "type": "checkbox",
+    "answers": [
+      {
+        "id": "62254dcf-064f-4e26-8321-0cf6ae9488c9",
+        "title": "Da!!"
+      },
+      {
+        "id": "8aea1147-c409-4836-ade0-3c26000a2275",
+        "title": "da!"
+      },
+      {
+        "id": "c49d5fcf-e407-4d0b-a39e-9149c261b592",
+        "title": "Da!!!"
+      }
+    ]
+  }
+]

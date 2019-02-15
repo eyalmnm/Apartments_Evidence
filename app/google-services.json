@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "594058314811",
+    "firebase_url": "https://apartmentsevidence.firebaseio.com",
+    "project_id": "apartmentsevidence",
+    "storage_bucket": "apartmentsevidence.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:594058314811:android:89059ba9c0b6ecf2",
+        "android_client_info": {
+          "package_name": "md.starlab.apartmentsevidenceapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "594058314811-hlr655lqettk10adlj283un4ra6r6vvl.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "md.starlab.apartmentsevidenceapp",
+            "certificate_hash": "c6758da91e7619b7fbf640aa045688f54ff60aa4"
+          }
+        },
+        {
+          "client_id": "594058314811-r33dtbnt1o78fcul0fog8g1im8ruomq6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBl8hmHdGAz5rxZab1rdte1ZMW371nSKvg"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "594058314811-r33dtbnt1o78fcul0fog8g1im8ruomq6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

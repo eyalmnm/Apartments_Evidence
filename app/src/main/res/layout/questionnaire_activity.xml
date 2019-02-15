@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!--Top Bar-->
+    <RelativeLayout
+        android:id="@+id/apartmentHistoryHeaderRootView"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/top_bar_height"
+        android:background="@color/transparent"
+        android:paddingLeft="@dimen/top_bar_margin"
+        android:paddingRight="@dimen/top_bar_margin">
+
+        <!--Top left-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/transparent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/transparent"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <!-- City name Text View -->
+                <TextView
+                    android:id="@+id/buildingsCityNameTextView"
+                    style="@style/TopBarTextBut"
+                    android:maxLength="@integer/top_bar_city_max_char"
+                    tools:text="Chisinau" />
+
+                <!-- Little white arrow -->
+                <include layout="@layout/top_bar_arrow" />
+
+                <!-- Street Name Text View -->
+                <TextView
+                    android:id="@+id/buildingsStreetNameTextView"
+                    style="@style/TopBarTextBut"
+                    android:maxLength="@integer/top_bar_street_max_char"
+                    tools:text="Stefan Cel Mare" />
+
+                <!-- Little white arrow -->
+                <include layout="@layout/top_bar_arrow" />
+
+                <!-- Building number -->
+                <TextView
+                    android:id="@+id/buildingsBuildingNumberTextView"
+                    style="@style/TopBarTextBut"
+                    android:maxLength="@integer/top_bar_build_max_char"
+                    tools:text="158 / 3" />
+
+                <!-- Little white arrow -->
+                <include layout="@layout/top_bar_arrow" />
+
+                <TextView
+                    android:id="@+id/buildingsApartmentNumberTextView"
+                    style="@style/TopBarTextBut"
+                    android:background="@drawable/building_street_name_bg_shape"
+                    android:maxLength="@integer/top_bar_app_max_char"
+                    tools:text="App. 2000 ABC" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <!--Top right-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/transparent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/transparent"
+                android:gravity="end|center_vertical"
+                android:orientation="horizontal">
+
+                <!-- No Wifi -->
+                <ImageView
+                    android:id="@+id/buildingsNoGpsWarningImageView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/top_bar_margin"
+                    android:background="@color/transparent"
+                    android:src="@drawable/ic_location_off" />
+
+                <!-- No GPS reception warning icon -->
+                <ImageView
+                    android:id="@+id/buildingsNoCellularWarningImageView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/top_bar_margin"
+                    android:background="@color/transparent"
+                    android:src="@drawable/ic_signal_wifi_off" />
+
+                <!-- User Ico -->
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/top_bar_user_ico_margin"
+                    android:background="@color/transparent"
+                    android:src="@drawable/ic_user" />
+
+                <!-- User Name Text View -->
+                <TextView
+                    android:id="@+id/buildingsUserNameTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/top_bar_margin"
+                    android:background="@color/transparent"
+                    android:ellipsize="marquee"
+                    android:gravity="center_vertical"
+                    android:maxLength="@integer/top_bar_user_name_max_char"
+                    android:singleLine="true"
+                    android:textColor="@color/cities_user_text_color"
+                    android:textSize="@dimen/cities_user_text_size"
+                    tools:text="test@test.com" />
+
+                <!-- Exit Icon -->
+                <ImageView
+                    android:id="@+id/buildingsLogoutIcon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="@color/transparent"
+                    android:src="@drawable/ic_exit" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+    <!-- End of Top Bar -->
+
+    <RelativeLayout
+        android:id="@+id/topBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/apartment_history_header_height"
+        android:layout_below="@id/apartmentHistoryHeaderRootView"
+        android:background="@color/grey_white">
+
+        <TextView
+            android:id="@+id/questionnaireStatusIndicator"
+            android:layout_width="@dimen/question_title_circle_size"
+            android:layout_height="@dimen/question_title_circle_size"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="25dp"
+            android:background="@drawable/white_circle_shape" />
+
+        <TextView
+            android:id="@+id/questionnaireStatusTitle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="82dp"
+            android:background="@color/transparent"
+            android:textAllCaps="true"
+            android:gravity="center_vertical"
+            android:text="@string/questionnaireTopBaraTitle"
+            android:textColor="@color/apartment_history_header_text_color"
+            android:textSize="@dimen/apartment_history_header_text_size" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/questionnaireSaveButton"
+        android:layout_below="@id/topBarLayout"
+        android:layout_marginBottom="4dp"
+        android:layout_marginLeft="72dp"
+        android:layout_marginRight="64dp"
+        android:layout_marginTop="4dp">
+        <!--android:fitsSystemWindows="true">-->
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/container"
+                android:layout_width="550dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical" />
+
+        </ScrollView>
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/questionnaireSaveButton"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/login_confirm_button_bg_color"
+        android:gravity="center"
+        android:text="SAVE"
+        android:textAllCaps="true"
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/question_save_button_text_size"
+        android:textStyle="bold" />
+
+</RelativeLayout>

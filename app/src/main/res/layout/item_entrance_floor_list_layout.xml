@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="0dp">
+
+    <TextView
+        android:id="@+id/addFloorAboveTextView"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/add_floor_text_view_height"
+        android:gravity="center"
+        android:background="@drawable/horizontal_edit_scroll_add_floor_background_shape"
+        android:layout_marginLeft="@dimen/nested_building_floor_card_padding"
+        android:layout_marginRight="@dimen/nested_building_floor_card_padding"
+        android:visibility="gone"/>
+    <LinearLayout
+        android:id="@+id/floorViewContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" />
+    <TextView
+        android:id="@+id/addFloorBelowTextView"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/add_floor_text_view_height"
+        android:gravity="center"
+        android:background="@drawable/horizontal_edit_scroll_add_floor_background_shape"
+        android:layout_marginLeft="@dimen/nested_building_floor_card_padding"
+        android:layout_marginRight="@dimen/nested_building_floor_card_padding"/>
+
+</LinearLayout>

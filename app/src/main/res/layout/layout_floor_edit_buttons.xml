@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/transparent"
+    android:orientation="horizontal">
+
+    <!-- Edit Floor -->
+    <LinearLayout
+        android:id="@+id/editFloorButtons"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/foot_panel_height"
+        android:orientation="horizontal"
+        android:visibility="visible">
+
+
+
+        <!--<Button-->
+            <!--android:id="@+id/addApartmentButton"-->
+            <!--android:layout_width="@dimen/foot_value_text_width"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:background="@drawable/counter_green_bg_shape" />-->
+
+        <!--<Button-->
+            <!--android:id="@+id/delFloorButton"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginLeft="@dimen/foot_buts_margin"-->
+            <!--android:background="@drawable/counter_green_bg_shape" />-->
+
+        <!--<Button-->
+            <!--android:id="@+id/unDoFloorButton"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginLeft="@dimen/foot_buts_margin"-->
+            <!--android:drawableLeft="@drawable/ic_android_back"-->
+            <!--android:background="@drawable/counter_green_bg_shape" />-->
+
+        <LinearLayout
+            android:id="@+id/unDoFloorButton"
+            android:layout_width="@dimen/foot_value_text_width"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:background="@drawable/counter_green_bg_shape">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_android_back"
+                 />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/delFloorButton"
+            android:layout_width="@dimen/foot_value_text_width"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/foot_buts_margin"
+            android:gravity="center"
+            android:backgroundTint="@color/nested_building_editor_deleted_button_gb_color"
+            android:background="@drawable/counter_green_bg_shape">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_recycle_bin_foot"
+                 />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/addApartmentButton"
+            android:layout_width="@dimen/foot_value_text_width"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/foot_buts_margin"
+            android:gravity="center"
+            android:background="@drawable/counter_green_bg_shape">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_plus_foot"
+                 />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <!-- Add Apartment -->
+    <LinearLayout
+        android:id="@+id/addApartmentButtonLView"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/foot_panel_height"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:id="@+id/addApartmentBack"
+            android:layout_width="@dimen/foot_buts_width"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:background="@drawable/counter_green_bg_shape"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_android_back"/>
+        </LinearLayout>
+
+        <md.starlab.apartmentsevidenceapp.ui_widgets.itemcounterview.CounterView
+            android:id="@+id/entrancesCounter"
+            android:layout_width="@dimen/foot_new_app_item_width"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/foot_buts_margin"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/counter_green_bg_shape"
+            app:border_width="0dp"
+            app:counterValueColor="@color/colorBlack"
+            app:dec_icon="@drawable/ic_remove"
+            app:inc_dec_button_color="@color/transparent"
+            app:inc_icon="@drawable/ic_plus"
+            app:textBackgroundColor="@android:color/darker_gray"
+            app:titleText="SCARA" />
+
+        <md.starlab.apartmentsevidenceapp.ui_widgets.itemcounterview.CounterView
+            android:id="@+id/floorsCounter"
+            android:layout_width="@dimen/foot_new_app_item_width"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="@dimen/foot_buts_margin"
+            android:background="@drawable/counter_green_bg_shape"
+            app:border_width="0dp"
+            app:counterValueColor="@color/colorBlack"
+            app:dec_icon="@drawable/ic_remove"
+            app:inc_dec_button_color="@color/transparent"
+            app:inc_icon="@drawable/ic_plus"
+            app:textBackgroundColor="@android:color/darker_gray"
+            app:titleText="ETAJ" />
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/root_view"
+            android:layout_width="@dimen/foot_new_app_item_appartment_width"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/foot_buts_margin"
+            android:background="@drawable/counter_green_bg_shape"
+            android:orientation="horizontal"
+            android:weightSum="100">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="60"
+                android:gravity="center"
+                android:lines="1"
+                android:text="APARTAMENT"
+                android:textSize="@dimen/foot_title_text_size"
+                android:textColor="@color/colorWhite"/>
+
+            <EditText
+                android:id="@+id/addApartmentValue"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="35"
+                android:background="@color/footer_value_bg_color"
+                android:gravity="center"
+                android:inputType="text"
+                android:maxLines="1"
+                android:textSize="@dimen/foot_value_text_size"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="@dimen/foot_buts_width"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/foot_buts_margin"
+            android:gravity="center"
+            android:background="@drawable/counter_green_bg_shape"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/addApartmentOkButton"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="OK"
+                android:textSize="@dimen/foot_title_text_size"
+                android:textColor="@color/colorWhite"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <!-- Move or delete Apartment -->
+    <LinearLayout
+        android:id="@+id/moveOrDeleteApartmentButtonLView"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/foot_panel_height"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <md.starlab.apartmentsevidenceapp.ui_widgets.itemcounterview.CounterView
+            android:id="@+id/moveOrDeleteApartmentEntrancesCounter"
+            android:layout_width="@dimen/foot_new_app_item_width"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/foot_buts_margin"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/counter_green_bg_shape"
+            app:border_width="0dp"
+            app:counterValueColor="@color/colorBlack"
+            app:dec_icon="@drawable/ic_remove"
+            app:inc_dec_button_color="@color/transparent"
+            app:inc_icon="@drawable/ic_plus"
+            app:textBackgroundColor="@android:color/darker_gray"
+            app:titleText="SCARA" />
+
+        <md.starlab.apartmentsevidenceapp.ui_widgets.itemcounterview.CounterView
+            android:id="@+id/moveOrDeleteApartmentFloorsCounter"
+            android:layout_width="@dimen/foot_new_app_item_width"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="@dimen/foot_buts_margin"
+            android:background="@drawable/counter_green_bg_shape"
+            app:border_width="0dp"
+            app:counterValueColor="@color/colorBlack"
+            app:dec_icon="@drawable/ic_remove"
+            app:inc_dec_button_color="@color/transparent"
+            app:inc_icon="@drawable/ic_plus"
+            app:textBackgroundColor="@android:color/darker_gray"
+            app:titleText="ETAJ" />
+
+        <LinearLayout
+            android:layout_width="@dimen/foot_buts_width"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/foot_buts_margin"
+            android:gravity="center"
+            android:background="@drawable/counter_green_bg_shape"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/moveOrDeleteApartmentOkButton"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="OK"
+                android:textSize="@dimen/foot_title_text_size"
+                android:textColor="@color/colorWhite"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/moveOrDeleteApartmentDelButton"
+            android:layout_width="@dimen/foot_value_text_width"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/foot_buts_margin"
+            android:gravity="center"
+            android:backgroundTint="@color/nested_building_editor_deleted_button_gb_color"
+            android:background="@drawable/counter_green_bg_shape">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_recycle_bin_foot"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/moveOrDeleteApartmentUnDoButton"
+            android:layout_width="@dimen/foot_value_text_width"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/foot_buts_margin"
+            android:gravity="center"
+            android:background="@drawable/counter_green_bg_shape">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_android_back"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

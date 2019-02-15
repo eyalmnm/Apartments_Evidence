@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="md.starlab.apartmentsevidenceapp">
+
+    <!-- Device Location permissions (BuildingsActivity, NestedBuildingActivity, ApartmentHistoryActivity)-->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <!-- Internet Access permissions (General and BuildingsActivity, NestedBuildingActivity, ApartmentHistoryActivity)-->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <!-- Storage Access Permissions (QuestionnaireActivity)-->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+
+    <application
+        android:name="md.starlab.apartmentsevidenceapp.ApartmentsEvidenceApp"
+        android:allowBackup="true"
+        android:icon="@mipmap/logo"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:theme="@style/AppTheme"
+        tools:ignore="GoogleAppIndexingWarning">
+        <activity
+            android:name="md.starlab.apartmentsevidenceapp.SplashActivity"
+            android:screenOrientation="landscape"
+            android:theme="@style/SplashScreenTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- Main Activity Screen (Permission request) -->
+        <activity
+            android:name=".view.MainActivity"
+            android:configChanges="layoutDirection|screenSize"
+            android:screenOrientation="landscape"
+            android:windowSoftInputMode="adjustPan|adjustResize|stateHidden" />
+
+        <!-- Login Screens -->
+        <activity
+            android:name="md.starlab.apartmentsevidenceapp.login.view.LoginActivity"
+            android:screenOrientation="landscape" />
+
+        <!-- Cities and Streets Screens -->
+        <activity
+            android:name="md.starlab.apartmentsevidenceapp.cities_streets.view.CitiesAndStreetsActivity"
+            android:configChanges="layoutDirection|screenSize"
+            android:screenOrientation="landscape"
+            android:windowSoftInputMode="adjustPan|adjustResize|stateHidden" />
+        <!--activity
+            android:name=".cities_streets.view.StreetsActivity"
+            android:configChanges="layoutDirection|screenSize"
+            android:screenOrientation="landscape"
+            android:windowSoftInputMode="adjustPan|adjustResize|stateHidden" /-->
+
+        <!-- Buildings Activity Components -->
+        <activity
+            android:name="md.starlab.apartmentsevidenceapp.buildings.view.BuildingsActivity"
+            android:configChanges="layoutDirection|screenSize"
+            android:screenOrientation="landscape"
+            android:windowSoftInputMode="adjustPan|adjustResize|stateHidden" />
+        <receiver
+            android:name="md.starlab.apartmentsevidenceapp.recivers.network.NetworkChangeReceiver"
+            android:enabled="true">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+        </receiver>
+
+        <!-- Nested Building Activity -->
+        <activity
+            android:name="md.starlab.apartmentsevidenceapp.nestedbuilding.view.NestedBuildingActivity"
+            android:configChanges="layoutDirection|screenSize"
+            android:screenOrientation="landscape"
+            android:theme="@style/AppThemeNestedBuilding"
+            android:windowSoftInputMode="adjustResize" />
+
+        <!-- Apartment History Activity -->
+        <activity
+            android:name=".history.apartment.view.ApartmentHistoryActivity"
+            android:configChanges="layoutDirection|screenSize"
+            android:screenOrientation="landscape"
+            android:theme="@style/AppThemeNestedBuilding"
+            android:windowSoftInputMode="adjustPan|adjustResize|stateHidden" />
+
+        <!-- Dynamic Questionnaire Screen -->
+        <activity
+            android:name=".questionnaire.view.QuestionnaireActivity"
+            android:screenOrientation="landscape"
+            android:theme="@style/AppThemeNoBg"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+
+
+        <!-- Location Service (All Application) -->
+        <service android:name=".services.location.locationListenerService" />
+
+    </application>
+
+
+</manifest>
+
+
+
+<!--OLD ONE-->
+
+    <!--<?xml version="1.0" encoding="utf-8"?>-->
+<!--<manifest xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--package="md.starlab.apartmentsevidenceapp">-->
+
+<!--&lt;!&ndash; Device Location permissions (BuildingsActivity, NestedBuildingActivity, ApartmentHistoryActivity)&ndash;&gt;-->
+<!--<uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />-->
+<!--<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />-->
+
+<!--&lt;!&ndash; Internet Access permissions (General and BuildingsActivity, NestedBuildingActivity, ApartmentHistoryActivity)&ndash;&gt;-->
+<!--<uses-permission android:name="android.permission.INTERNET" />-->
+<!--<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />-->
+
+
+<!--<application-->
+    <!--android:name="md.starlab.apartmentsevidenceapp.ApartmentsEvidenceApp"-->
+    <!--android:allowBackup="true"-->
+    <!--android:icon="@mipmap/ic_launcher"-->
+    <!--android:label="@string/app_name"-->
+    <!--android:roundIcon="@mipmap/ic_launcher_round"-->
+    <!--android:supportsRtl="true"-->
+    <!--android:theme="@style/AppTheme">-->
+    <!--<activity-->
+        <!--android:name="md.starlab.apartmentsevidenceapp.SplashActivity"-->
+        <!--android:screenOrientation="landscape"-->
+        <!--android:theme="@style/SplashScreenTheme"-->
+        <!--android:windowSoftInputMode="adjustResize|stateHidden">-->
+        <!--<intent-filter>-->
+            <!--<action android:name="android.intent.action.MAIN" />-->
+
+            <!--<category android:name="android.intent.category.LAUNCHER" />-->
+        <!--</intent-filter>-->
+    <!--</activity>-->
+
+    <!--&lt;!&ndash; Main Activity Screen (Permission request) &ndash;&gt;-->
+    <!--<activity-->
+        <!--android:name="md.starlab.apartmentsevidenceapp.view.MainActivity"-->
+        <!--android:configChanges="layoutDirection|screenSize"-->
+        <!--android:screenOrientation="landscape"-->
+        <!--android:windowSoftInputMode="adjustPan|adjustResize|stateHidden" />-->
+
+    <!--&lt;!&ndash; Dynamic Questionnaire Screen &ndash;&gt;-->
+    <!--<activity-->
+        <!--android:name="md.starlab.apartmentsevidenceapp.view.QuestionnaireActivity"-->
+        <!--android:screenOrientation="landscape"-->
+        <!--android:windowSoftInputMode="adjustPan|adjustResize|stateHidden" />-->
+
+    <!--&lt;!&ndash; Login Screens &ndash;&gt;-->
+    <!--<activity-->
+        <!--android:name="md.starlab.apartmentsevidenceapp.login.view.LoginActivity"-->
+        <!--android:configChanges="layoutDirection"-->
+        <!--android:screenOrientation="landscape"-->
+        <!--android:windowSoftInputMode="adjustPan|adjustResize|stateHidden" />-->
+
+    <!--&lt;!&ndash; Cities and Streets Screens &ndash;&gt;-->
+    <!--<activity-->
+        <!--android:name="md.starlab.apartmentsevidenceapp.cities_streets.view.CitiesAndStreetsActivity"-->
+        <!--android:configChanges="layoutDirection|screenSize"-->
+        <!--android:screenOrientation="landscape"-->
+        <!--android:windowSoftInputMode="adjustPan|adjustResize|stateHidden" />-->
+    <!--&lt;!&ndash;activity-->
+        <!--android:name=".cities_streets.view.StreetsActivity"-->
+        <!--android:configChanges="layoutDirection|screenSize"-->
+        <!--android:screenOrientation="landscape"-->
+        <!--android:windowSoftInputMode="adjustPan|adjustResize|stateHidden" /&ndash;&gt;-->
+
+    <!--&lt;!&ndash; Buildings Activity Components &ndash;&gt;-->
+    <!--<activity-->
+        <!--android:name="md.starlab.apartmentsevidenceapp.buildings.view.BuildingsActivity"-->
+        <!--android:configChanges="layoutDirection|screenSize"-->
+        <!--android:screenOrientation="landscape"-->
+        <!--android:windowSoftInputMode="adjustPan|adjustResize|stateHidden" />-->
+    <!--<receiver-->
+        <!--android:name="md.starlab.apartmentsevidenceapp.recivers.network.NetworkChangeReceiver"-->
+        <!--android:enabled="true">-->
+        <!--<intent-filter>-->
+            <!--<action android:name="android.net.conn.CONNECTIVITY_CHANGE" />-->
+        <!--</intent-filter>-->
+    <!--</receiver>-->
+
+    <!--&lt;!&ndash; Nested Building Activity &ndash;&gt;-->
+    <!--<activity-->
+        <!--android:name="md.starlab.apartmentsevidenceapp.nestedbuilding.view.NestedBuildingActivity"-->
+        <!--android:configChanges="layoutDirection|screenSize"-->
+        <!--android:screenOrientation="landscape"-->
+        <!--android:theme="@style/AppThemeNestedBuilding"-->
+        <!--android:windowSoftInputMode="adjustPan|adjustResize|stateHidden" />-->
+
+    <!--&lt;!&ndash; Apartment History Activity &ndash;&gt;-->
+    <!--<activity-->
+        <!--android:name=".history.apartment.view.ApartmentHistoryActivity"-->
+        <!--android:configChanges="layoutDirection|screenSize"-->
+        <!--android:screenOrientation="landscape"-->
+        <!--android:theme="@style/AppThemeNestedBuilding"-->
+        <!--android:windowSoftInputMode="adjustPan|adjustResize|stateHidden" />-->
+
+    <!--&lt;!&ndash; Location Service (All Application) &ndash;&gt;-->
+    <!--<service android:name=".services.location.locationListenerService" />-->
+
+<!--</application>-->
+
+
+<!--</manifest>-->

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Custom View Ids -->
+    <item name="apartment_number_textview_id" type="id" />
+    <item name="entrance_number_textview_id" type="id" />
+    <item name="floor_number_textview_id" type="id" />
+    <item name="state_icon_imageview_id" type="id" />
+
+</resources>

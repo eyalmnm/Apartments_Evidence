@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory android:title="GeoLocation Monitoring">
+
+        <android.support.v7.preference.SwitchPreferenceCompat
+            android:defaultValue="true"
+            android:key="enable_geo_location"
+            android:summary="Enable Geo Location"
+            android:summaryOff="Geo Location Disabled"
+            android:summaryOn="Geo Location Enabled" />
+
+
+    </PreferenceCategory>
+
+</PreferenceScreen>

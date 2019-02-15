@@ -1,0 +1,297 @@
+<resources>
+
+    <!-- large-hdpi -->
+
+    <dimen name="spacing_1x">3dp</dimen>
+    <dimen name="spacing_2x">5dp</dimen>
+    <dimen name="spacing_3x">8dp</dimen>
+    <dimen name="spacing_4x">10dp</dimen>
+    <dimen name="spacing_5x">13dp</dimen>
+    <dimen name="spacing_6x">15dp</dimen>
+
+    <dimen name="text_size_1.0x">4dp</dimen>
+    <dimen name="text_size_1.5x">6dp</dimen>
+    <dimen name="text_size_1.75x">7dp</dimen>
+    <dimen name="text_size_2.0x">8dp</dimen>
+    <dimen name="text_size_2.25x">9dp</dimen>
+    <dimen name="text_size_2.5x">10dp</dimen>
+    <dimen name="text_size_3.0x">12dp</dimen>
+    <dimen name="text_size_3.5x">14dp</dimen>
+
+    <dimen name="vertical_padding">8dp</dimen>
+    <dimen name="horizontal_padding">8dp</dimen>
+
+    <dimen name="vertical_margin">8dp</dimen>
+    <dimen name="horizontal_margin">8dp</dimen>
+
+    <dimen name="main_header_height">15dp</dimen>
+
+    <!--<dimen name="field_horizontal_padding">10dp</dimen>-->
+
+    <!-- Entrance Dimens -->
+    <dimen name="entrance_floor_width">200dp</dimen>
+    <dimen name="entrance_floor_height">100dp</dimen>
+    <dimen name="nested_building_floor_card_padding">5dp</dimen>
+    <dimen name="nested_building_floor_card_width">200dp</dimen>
+    <dimen name="nested_building_floor_card_height">100dp</dimen>
+    <dimen name="nested_building_floor_card_round">4dp</dimen>
+    <dimen name="nested_building_floor_card_line_height">50dp</dimen>
+    <dimen name="nested_building_app_card_padding">1dp</dimen>
+
+    <dimen name="nested_border_panel_small">20dp</dimen>
+
+    <dimen name="foot_panel_height">25dp</dimen>
+    <dimen name="foot_buts_margin">10dp</dimen>
+    <dimen name="foot_buts_width">45dp</dimen>
+    <dimen name="foot_title_text_size">11dp</dimen>
+    <dimen name="foot_title_text_width">75dp</dimen>
+    <dimen name="foot_value_text_size">10dp</dimen>
+    <dimen name="foot_value_text_width">50dp</dimen>
+    <dimen name="foot_new_app_item_width">165dp</dimen>
+    <dimen name="foot_new_app_item_appartment_width">150dp</dimen>
+
+
+    <!-- Dialogs -->
+    <dimen name="dialog_window_width">278dp</dimen>
+    <dimen name="dialog_window_height">206dp</dimen>
+    <dimen name="dialog_padding">5dp</dimen>
+    <dimen name="dialog_message_text_size">10dp</dimen>
+
+    <!-- Exit Dialog Dimen -->
+    <dimen name="exit_window_width">278dp</dimen>
+    <dimen name="exit_window_height">206dp</dimen>
+    <dimen name="exit_window_radius">4dp</dimen>
+    <dimen name="exit_button_width">51dp</dimen>
+    <dimen name="exit_button_height">24dp</dimen>
+    <dimen name="exit_button_radius">12dp</dimen>
+    <dimen name="exit_title_text_size">11dp</dimen>
+    <dimen name="exit_but_text_size">10dp</dimen>
+    <dimen name="exit_but_margin">10dp</dimen>
+
+    <!-- Login Screen Dimens -->
+    <dimen name="login_form_title_width">125dp</dimen>
+    <dimen name="login_form_title_height">30dp</dimen>
+    <dimen name="login_form_title_top_margin">35dp</dimen>
+    <dimen name="login_form_layout_width">180dp</dimen>
+    <dimen name="login_form_layout_right_padding">23dp</dimen>
+    <dimen name="login_confirm_button_width">@dimen/login_form_layout_width</dimen>
+    <dimen name="login_confirm_button_height">@dimen/login_form_title_height</dimen>
+    <dimen name="login_confirm_button_bottom_margin">@dimen/login_form_title_top_margin</dimen>
+    <dimen name="login_confirm_button_left_padding">20dp</dimen>
+    <dimen name="login_confirm_button_radius">15dp</dimen>
+    <dimen name="login_error_padding">25dp</dimen>
+    <dimen name="login_error_text_padding">20dp</dimen>
+    <dimen name="white_circle_width">600dp</dimen>
+    <dimen name="white_circle_hight">600dp</dimen>
+    <dimen name="white_circle_margin_bottom">-590dp</dimen>
+    <dimen name="white_circle_margin_right">-590dp</dimen>
+    <dimen name="login_animate_form_title_translation_x">25dp</dimen>
+    <dimen name="login_animate_form_title_translation_y">-30dp</dimen>
+    <dimen name="login_animate_confirm_button_translation_y">-245dp</dimen>
+    <dimen name="login_animate_animate_form_translation_y">-135dp</dimen>
+
+    <!-- Cities and Streets Screen Dimens -->
+    <dimen name="cities_sn_logo_right_margin">60dp</dimen>
+    <dimen name="cities_white_circle_width">600dp</dimen>
+    <dimen name="cities_white_circle_height">600dp</dimen>
+    <dimen name="cities_white_circle_left_margin">-600dp</dimen>
+    <dimen name="cities_user_text_size">8dp</dimen>
+    <dimen name="cities_user_top_margin">8dp</dimen>
+    <dimen name="cities_user_drawable_padding">2dp</dimen>
+    <dimen name="cities_list_child_margin">25dp</dimen>
+    <dimen name="cities_list_bg_corners">13dp</dimen>
+    <dimen name="cities_list_bg_height">26dp</dimen>
+    <dimen name="cities_user_width">110dp</dimen>
+
+    <!-- Streets Screen Dimens -->
+    <dimen name="street_city_name_title_height">25dp</dimen>
+    <dimen name="street_city_name_title_radius">13dp</dimen>
+    <dimen name="street_city_name_title_width">125dp</dimen>
+
+    <!-- Buildings Screen Dimens -->
+    <dimen name="buildings_city_name_bg_height">15dp</dimen>
+    <dimen name="buildings_city_name_bg_radius">7dp</dimen>
+
+    <!-- Building Info Dialog Dimens -->
+    <dimen name="building_info_dialog_width">255dp</dimen>
+    <dimen name="building_info_dialog_height">225dp</dimen>
+    <dimen name="building_info_close_icon_size">14dp</dimen>
+
+    <!-- Apartment History Screen Dimens -->
+    <dimen name="apartment_history_header_height">44dp</dimen>
+    <dimen name="apartment_history_header_text_size">12dp</dimen>
+    <dimen name="apartment_history_header_left_margin">20dp</dimen>
+    <dimen name="apartment_history_header_right_margin">10dp</dimen>
+    <dimen name="apartment_history_item_height">26dp</dimen>
+    <dimen name="apartment_history_item_radius">13dp</dimen>
+    <dimen name="apartment_history_item_circle">19dp</dimen>
+    <dimen name="apartment_history_item_circle_margin">4dp</dimen>
+    <dimen name="apartment_history_item_status_width">15dp</dimen>
+    <dimen name="apartment_history_item_status_height">15dp</dimen>
+    <dimen name="apartment_history_item_date_width">60dp</dimen>
+    <dimen name="apartment_history_item_date_text_margin">2dp</dimen>
+    <dimen name="apartment_history_item_title_text_size">10dp</dimen>
+    <dimen name="apartment_history_item_date_text_size">10dp</dimen>
+    <dimen name="apartment_history_item_description_text_size">8dp</dimen>
+    <dimen name="apartment_history_list_margin">@dimen/top_bar_margin</dimen>
+    <dimen name="apartment_history_space_line">2dp</dimen>
+    <dimen name="apartment_action_item_height">38dp</dimen>
+    <dimen name="apartment_action_item_text_right_margin">60dp</dimen>
+    <dimen name="apartment_action_item_question_margin">12dp</dimen>
+    <dimen name="apartment_action_item_radius">12dp</dimen>
+    <dimen name="apartment_action_ok_margin">2dp</dimen>
+    <dimen name="apartment_action_ok_size">14dp</dimen>
+    <dimen name="apartment_action_item_margin">@dimen/apartment_history_list_margin</dimen>
+    <dimen name="apartment_action_but_width">51dp</dimen>
+    <dimen name="apartment_action_but_height">24dp</dimen>
+    <dimen name="apartment_left_list_divider">5dp</dimen>
+    <dimen name="apartment_right_list_divider">1dp</dimen>
+
+    <!-- Nested Buildings Screen Dimens -->
+    <dimen name="nested_building_apartment_item_width">44dp</dimen>
+    <dimen name="nested_building_apartment_item_height">39dp</dimen>
+    <dimen name="nested_building_apartment_item_indicator_height">6dp</dimen>
+    <dimen name="nested_building_editor_view_height">90dp</dimen>
+    <dimen name="nested_building_can_not_delete_dialog_width">200dp</dimen>
+    <dimen name="nested_building_can_not_delete_dialog_height">150dp</dimen>
+    <dimen name="nested_building_new_floor_title_size">12dp</dimen>
+    <dimen name="nested_building_new_floor_title_margin_top">15dp</dimen>
+    <dimen name="nested_building_new_floor_name_width">200dp</dimen>
+    <dimen name="nested_building_new_floor_title_edit_text_margin_top">25dp</dimen>
+    <dimen name="nested_building_new_floor_dialog_width">230dp</dimen>
+    <dimen name="nested_building_new_floor_dialog_height">160dp</dimen>
+    <dimen name="nested_building_new_floor_title_edit_text_margin_bottom">5dp</dimen>
+    <dimen name="nested_building_new_entrance_dialog_width">230dp</dimen>
+    <dimen name="nested_building_new_entrance_dialog_height">230dp</dimen>
+    <dimen name="nested_building_failure_main_image_margin_top">15dp</dimen>
+    <dimen name="nested_building_failure_dialog_height">175dp</dimen>
+    <dimen name="nested_building_delete_floor_dialog_width">225dp</dimen>
+    <dimen name="nested_building_delete_floor_dialog_height">150dp</dimen>
+    <dimen name="nested_building_delete_entrance_dialog_height">175dp</dimen>
+    <dimen name="nested_building_delete_empty_entrance_dialog_height">200dp</dimen>
+    <dimen name="nested_building_delete_apartment_dialog_height">200dp</dimen>
+    <dimen name="nested_building_delete_empty_floor_dialog_height">175dp</dimen>
+    <dimen name="nested_building_new_floor_dialog_text_size">10sp</dimen>
+    <dimen name="nested_building_new_floor_dialog_button_width">80sp</dimen>
+    <dimen name="nested_building_new_floor_dialog_button_text_size">10sp</dimen>
+    <dimen name="nested_building_new_floor_dialog_button_min_height">36dp</dimen>
+    <dimen name="nested_building_failure_message_text_size">10sp</dimen>
+
+    <!-- Entrance Edit Dialog Dimens -->
+    <dimen name="entrance_edit_dialog_height">280dp</dimen>
+    <dimen name="entrance_edit_dialog_title_text_padding">10dp</dimen>
+    <dimen name="entrance_edit_dialog_title_text_size">11dp</dimen>
+    <dimen name="entrance_edit_dialog_delete_entrance_width">20dp</dimen>
+    <dimen name="entrance_edit_dialog_title_width">175dp</dimen>
+    <dimen name="entrance_edit_dialog_delete_floor_cover_height">90dp</dimen>
+
+    <dimen name="floor_view_shadow_size">5dp</dimen>
+
+    <dimen name="horizontal_edit_scroll_title_container_width">165dp</dimen>
+    <dimen name="horizontal_edit_scroll_title_container_height">20dp</dimen>
+    <dimen name="horizontal_edit_scroll_delete_entrance_width">15dp</dimen>
+
+    <dimen name="add_floor_text_view_height">15dp</dimen>
+
+    <dimen name="vertical_scroll_title_height">@dimen/entrance_floor_height</dimen>
+    <dimen name="vertical_scroll_title_width">20dp</dimen>
+    <dimen name="vertical_scroll_title_margin_top">0dp</dimen>
+    <dimen name="vertical_scroll_title_margin_bottom">10dp</dimen>
+    <dimen name="horizontal_scroll_title_width">@dimen/entrance_floor_width</dimen>
+    <dimen name="horizontal_scroll_title_height">20dp</dimen>
+    <dimen name="horizontal_scroll_title_margin_left">13dp</dimen>
+    <dimen name="horizontal_scroll_title_margin_right">3dp</dimen>
+    <dimen name="horizontal_scroll_title_padding">17dp</dimen>
+    <dimen name="vertical_edit_scroll_add_width">20dp</dimen>
+    <dimen name="vertical_edit_scroll_add_height">20dp</dimen>
+    <dimen name="vertical_edit_scroll_big_plus_height">40dp</dimen>
+    <dimen name="vertical_edit_scroll_title_width">20dp</dimen>
+    <dimen name="vertical_edit_scroll_title_height">50dp</dimen>
+    <dimen name="vertical_edit_scroll_title_margin_top">5dp</dimen>
+    <dimen name="vertical_edit_scroll_title_margin_bottom">5dp</dimen>
+    <dimen name="horizontal_edit_scroll_add_width">20dp</dimen>
+    <dimen name="horizontal_edit_scroll_big_plus_width">45dp</dimen>
+    <dimen name="horizontal_edit_scroll_add_height">20dp</dimen>
+    <dimen name="horizontal_edit_scroll_title_height">20dp</dimen>
+    <dimen name="horizontal_edit_scroll_title_width">150dp</dimen>
+    <dimen name="horizontal_edit_scroll_title_padding">12dp</dimen>
+    <dimen name="horizontal_edit_scroll_title_margin_left">10dp</dimen>
+    <dimen name="horizontal_edit_scroll_title_margin_right">5dp</dimen>
+    <dimen name="horizontal_scroll_title_text_size">@dimen/scroller_text_size</dimen>
+    <dimen name="vertical_scroll_title_text_size">@dimen/scroller_text_size</dimen>
+    <dimen name="vertical_edit_scroll_bottom_margin">17dp</dimen>
+    <dimen name="vertical_edit_scroll_top_margin">0dp</dimen>
+    <dimen name="vertical_scroll_bottom_margin">21dp</dimen>
+    <dimen name="building_info_warning_icon_size">75dp</dimen>
+    <dimen name="delete_floor_button_width">45dp</dimen>
+    <dimen name="scroller_start_horizontal_margin">18dp</dimen>
+    <dimen name="scroller_start_margin">18dp</dimen>
+    <dimen name="scroller_text_size">6dp</dimen>
+    <dimen name="central_hider_width">21dp</dimen>
+    <dimen name="central_hider_margin">20dp</dimen>
+
+    <!--Top Bar-->
+    <dimen name="top_bar_height">42dp</dimen>
+    <dimen name="top_bar_spacer">8dp</dimen>
+    <dimen name="top_bar_margin">11dp</dimen>
+    <dimen name="top_bar_but_height">24dp</dimen>
+    <dimen name="top_bar_but_round">12dp</dimen>
+    <dimen name="top_bar_text_padding">15dp</dimen>
+    <dimen name="top_bar_text_size">8dp</dimen>
+    <dimen name="top_bar_user_ico_margin">5dp</dimen>
+
+    <!-- Questionnaire -->
+    <dimen name="question_title_text_size">7dp</dimen>
+    <dimen name="question_option_text_size">6dp</dimen>
+    <dimen name="question_info_text_size">5dp</dimen>
+    <dimen name="question_save_button_text_size">20dp</dimen>
+    <dimen name="question_questions_margin_size">5dp</dimen>
+    <dimen name="question_attachment_margin_size">3dp</dimen>
+    <dimen name="question_titles_padding">9dp</dimen>
+    <dimen name="question_titles_margin_top">0dp</dimen>
+    <dimen name="question_content_margin_top">5dp</dimen>
+    <dimen name="question_content_margin_left">5dp</dimen>
+    <dimen name="question_box_margin_top">4dp</dimen>
+    <dimen name="question_box_margin_left">2dp</dimen>
+    <dimen name="question_text_padding_h">10dp</dimen>
+    <dimen name="question_text_padding_v">7dp</dimen>
+    <dimen name="question_attach_text_width">220dp</dimen>
+    <dimen name="question_attach_but_width">60dp</dimen>
+    <dimen name="question_attach_but_height">@dimen/top_bar_but_height</dimen>
+    <dimen name="question_title_circle_size">19dp</dimen>
+    <dimen name="question_save_h">40dp</dimen>
+
+    <!-- ADD NEW VALUES (DEFAULT, 10", 7" )-->
+    <dimen name="ic_user_size">13dp</dimen>
+    <dimen name="ic_clock_size">10dp</dimen>
+    <dimen name="ic_atention_width">88dp</dimen>
+    <dimen name="ic_atention_height">77dp</dimen>
+    <dimen name="login_circle_size">1280dp</dimen>
+    <dimen name="login_input_title">8dp</dimen>
+    <dimen name="login_input_size">12dp</dimen>
+    <dimen name="login_confirm_size">14dp</dimen>
+    <dimen name="ic_arrow_w">5dp</dimen>
+    <dimen name="ic_arrow_h">7dp</dimen>
+    <dimen name="ic_back_w">18dp</dimen>
+    <dimen name="ic_back_h">13dp</dimen>
+    <dimen name="ic_plus_size">8dp</dimen>
+    <dimen name="ic_plus_foot_size">14dp</dimen>
+    <dimen name="ic_location_size">15dp</dimen>
+    <dimen name="ic_trash_foot_w">13dp</dimen>
+    <dimen name="ic_trash_foot_h">15dp</dimen>
+    <dimen name="ic_trash_big_w">47dp</dimen>
+    <dimen name="ic_trash_big_h">59dp</dimen>
+    <dimen name="ic_simple_arrow_size">10dp</dimen>
+    <dimen name="login_form_top_margin">10dp</dimen>
+    <dimen name="entrance_mini_trash_padding">4dp</dimen>
+    <dimen name="login_logo_w">577dp</dimen>
+    <dimen name="login_logo_h">516dp</dimen>
+    <dimen name="build_cell_size">76dp</dimen>
+    <dimen name="build_cell_line_w">50dp</dimen>
+    <dimen name="build_cell_line_h">5dp</dimen>
+
+
+
+
+
+</resources>

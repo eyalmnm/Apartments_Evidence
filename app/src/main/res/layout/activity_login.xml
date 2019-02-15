@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/loginRootView"
+    style="@style/AppTheme"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorYellowGold"
+    android:fillViewport="true"
+    android:fitsSystemWindows="true"
+    android:focusable="true"
+    android:focusableInTouchMode="true">
+
+    <!--Error View-->
+    <LinearLayout
+        android:id="@+id/errorView"
+        android:visibility="invisible"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:padding="@dimen/login_error_padding"
+        android:background="@color/buildings_red">
+        <TextView
+            android:id="@+id/errorText"
+            android:text="Verificați conecțiunea Internetului"
+            android:textSize="@dimen/apartment_action_ok_size"
+            android:gravity="center_vertical"
+            android:textColor="@color/colorWhite"
+            android:drawablePadding="@dimen/login_error_text_padding"
+            android:drawableLeft="@drawable/ic_warning"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <!-- Star net Logo -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical">
+        <ImageView
+            android:id="@+id/loginStarNetLogoImageView"
+            android:layout_width="@dimen/login_logo_w"
+            android:layout_height="@dimen/login_logo_h"
+            android:src="@drawable/logo_bubble" />
+    </LinearLayout>
+
+
+    <!-- The growing white circle -->
+    <ImageView
+        android:id="@+id/loginWhitCircleImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/transparent"
+        android:src="@drawable/white_circle" />
+
+    <!-- Login Form Title -->
+    <TextView
+        android:id="@+id/loginTitleTextView"
+        android:layout_width="@dimen/login_form_title_width"
+        android:layout_height="@dimen/login_form_title_height"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="@dimen/login_form_title_top_margin"
+        android:background="@drawable/login_font"
+        android:gravity="center|right"
+        android:textAppearance="?android:textAppearanceLarge"
+        android:textColor="@color/colorYellowGold"
+        android:textSize="50dp"
+        android:textStyle="bold" />
+
+    <!-- Login Form Holder -->
+    <LinearLayout
+        android:id="@+id/loginFormRootLayout"
+        android:layout_width="@dimen/login_form_layout_width"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:background="@color/colorWhite"
+        android:orientation="vertical"
+        android:paddingRight="@dimen/login_form_layout_right_padding">
+
+        <!-- User name TextInputLayout -->
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/loginUserNameTextInputLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/TextLabel">
+
+            <EditText
+                android:id="@+id/loginUserNameEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/login_user_name_hint_text"
+                android:imeOptions="actionNext"
+                android:inputType="text|textNoSuggestions"
+                android:maxLines="1"
+                android:textSize="@dimen/login_input_size"
+                android:text="starapart-01" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <!-- User name TextInputLayout -->
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/loginPasswordTextInputLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/loginUserNameTextInputLayout"
+            android:layout_marginTop="@dimen/login_form_top_margin"
+            android:theme="@style/TextLabel">
+
+            <EditText
+                android:id="@+id/loginPasswordEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/login_password_hint_text"
+                android:imeOptions="actionSend"
+                android:inputType="textPassword|textNoSuggestions"
+                android:maxLines="1"
+                android:textSize="@dimen/login_input_size"
+                android:text="123QWE123!" />
+
+        </android.support.design.widget.TextInputLayout>
+    </LinearLayout>
+
+    <!-- Confirm Button -->
+    <TextView
+        android:id="@+id/loginConfirmButton"
+        android:layout_width="@dimen/login_confirm_button_width"
+        android:layout_height="@dimen/login_confirm_button_height"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="@dimen/login_confirm_button_bottom_margin"
+        android:background="@drawable/login_confirm_button_background"
+        android:gravity="center"
+        android:paddingRight="@dimen/login_confirm_button_left_padding"
+        android:text="@string/login_confirm_button_text"
+        android:textAllCaps="true"
+        android:textSize="@dimen/login_confirm_size"
+        android:textColor="@color/colorBlack" />
+
+
+
+</RelativeLayout>

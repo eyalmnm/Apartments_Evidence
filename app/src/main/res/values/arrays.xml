@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- questionnaires Arrays -->
+    <string-array name="questionnaires">
+        <item> One question with label only</item>
+        <item> One question with label and input text</item>
+        <item> Two questions with label and input text on each of them</item>
+    </string-array>
+</resources>

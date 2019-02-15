@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/nested_building_floor_card_padding">
+
+    <LinearLayout
+        android:id="@+id/apartmentsContainer"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/nested_building_floor_card_height"
+        android:minWidth="@dimen/nested_building_floor_card_width"
+        android:background="@drawable/cell_bg_shape"
+        android:orientation="vertical"
+        android:weightSum="2">
+
+        <LinearLayout
+            android:id="@+id/apartmentsContainerTop"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:gravity="bottom"
+            android:background="@color/transparent"/>
+
+        <LinearLayout
+            android:id="@+id/apartmentsContainerBottom"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="bottom"
+            android:orientation="horizontal"
+            android:background="@color/transparent"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/floorApartmentsContainerCover"
+        android:layout_width="@dimen/nested_building_floor_card_width"
+        android:layout_height="@dimen/nested_building_floor_card_height"
+        android:background="@color/semi_transparent"
+        android:orientation="horizontal"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/floorDeleteCover"
+        android:layout_width="@dimen/nested_building_floor_card_width"
+        android:layout_height="@dimen/nested_building_floor_card_height"
+        android:background="@drawable/horizontal_edit_scroll_delete_floor_background_shape"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:visibility="gone">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_recycle_bin_big"/>
+    </LinearLayout>
+</FrameLayout>

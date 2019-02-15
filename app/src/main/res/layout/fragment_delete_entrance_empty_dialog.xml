@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/nested_building_new_floor_bg_shape">
+
+    <ImageView
+        android:id="@+id/mainImage"
+        android:layout_width="@dimen/building_info_warning_icon_size"
+        android:layout_height="@dimen/building_info_warning_icon_size"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/nested_building_failure_main_image_margin_top"
+        android:background="@color/transparent"
+        android:src="@drawable/ic_atentie2" />
+
+    <TextView
+        android:id="@+id/messageTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/mainImage"
+        android:layout_margin="@dimen/nested_building_failure_main_image_margin_top"
+        android:background="@color/transparent"
+        android:gravity="center"
+        android:lines="3"
+        android:maxLines="3"
+        android:text="Message"
+        android:textSize="19sp" />
+
+    <TextView
+        android:id="@+id/yesButton"
+        android:layout_width="@dimen/delete_floor_button_width"
+        android:layout_height="@dimen/exit_button_height"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="20dp"
+        android:background="@drawable/yellow_ok_button_background_shape"
+        android:gravity="center"
+        android:text="@android:string/yes" />
+
+    <TextView
+        android:id="@+id/noButton"
+        android:layout_width="@dimen/delete_floor_button_width"
+        android:layout_height="@dimen/exit_button_height"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/gray_no_button_background_shape"
+        android:gravity="center"
+        android:text="@android:string/no" />
+
+</RelativeLayout>

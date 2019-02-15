@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Application Style Colors -->
+    <!--<color name="colorPrimary">@color/colorYellowGold</color>-->
+    <color name="colorPrimary">@color/yellow_regular</color>
+    <color name="colorPrimaryDark">@color/colorYellowGoldDark</color>
+    <color name="colorAccent">@color/colorGreen</color>
+    <color name="textColorPrimary">@android:color/darker_gray</color>
+
+
+    <!-- Login Screen Colors -->
+    <color name="login_bg_color">@color/colorYellowGold</color>
+    <color name="login_normal_edit_text_color">@color/colorGray</color>
+    <color name="login_active_edit_text_color">@color/colorGreen</color>
+    <color name="login_highlight_edit_text_color">@color/colorGreen</color>
+    <color name="login_accent_edit_text_color">@color/colorGreen</color>
+    <color name="login_hint_text_color">@color/colorGray</color>
+    <color name="login_edit_text_text_color">@color/colorGreen</color>
+    <color name="login_edit_text_bg_color">@color/colorWhite</color>
+    <color name="login_box_stroke_color">@color/colorGreen</color>
+    <color name="login_confirm_button_bg_color">#ff28d500</color>
+
+    <!-- Cities and Streets Colors -->
+    <color name="cities_user_text_color">#ff212121</color>
+    <color name="cities_list_bg_color">#fff2f2f2</color>
+    <color name="cities_list_selected_bg_color">#757575</color>
+    <color name="streets_city_name_bg_color">#25C500</color>
+
+    <!-- Buildings Screen Colors -->
+    <!--<color name="buildings_red">#F3624E</color>-->
+    <color name="buildings_red">#e21e04</color>
+    <color name="buildings_yellow">@color/yellow_regular</color>
+    <color name="buildings_green">#8CD256</color>
+    <color name="buildings_city_name_bg_color">@color/yellow_light</color>
+    <!--<color name="buildings_header_warning_bg_color">#F3624E</color>-->
+    <color name="buildings_header_warning_bg_color">@color/buildings_red</color>
+    <color name="buildings_city_name_text_color">#434343</color>
+    <color name="buildings_grid_item_bg_color">@color/grey_light</color>
+    <color name="buildings_grid_item_bg_color_old">#F5F5F5</color>
+
+    <!-- Building Floor Colors -->
+    <color name="building_floor_bg_color">#FFEEEEEE</color>
+    <color name="building_floor_devider_color">#ff197b30</color>
+
+    <!-- Building Info Dialog Background Color -->
+    <!--<color name="building_info_dialog_bg_color">#F5F5F5</color>-->
+    <color name="building_info_dialog_bg_color">@color/nested_building_new_floor_bg_color</color>
+    <color name="delete_floor_bg_color">#AABCBCBC</color>
+
+    <!-- Nested Building Colors -->
+    <color name="nested_building_scheme_vertical_item_color">#ECECEC</color>
+    <color name="nested_building_edit_window_bg_color">#EEEEEE</color>
+    <color name="nested_building_editor_deleted_button_gb_color">#F3314C</color>
+    <color name="nested_building_scheme_vertical_edit_item_color">#5CB814</color>
+    <color name="nested_building_new_floor_bg_color">#F5F5F5</color>
+    <color name="nested_building_new_floor_cancel_bg_color">#D9D7D7</color>
+    <color name="nested_building_new_floor_text_color">#434343</color>
+    <color name="nested_building_buttons_bg_color">#4BAD00</color>
+    <color name="footer_devider_color">#ff347800</color>
+    <color name="footer_value_bg_color">@color/building_floor_bg_color</color>
+    <color name="nested_building_selected_apartment_bg_color">#4BAD00</color>
+
+    <!-- Apartment History Colors -->
+    <color name="apartment_history_header_bg_color">#F2F2F2</color>
+    <color name="apartment_history_header_text_color">@color/grey_regular</color>
+    <color name="apartment_history_trans_date_text_color">#DC4439</color>
+
+    <color name="colorBlack">#000000</color>
+    <color name="colorGray">#BCBCBC</color>
+    <color name="colorYellowGold">#FFD700</color>
+    <color name="colorYellowGoldDark">#ffb300</color>
+
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="colorGreen">#2da810</color>
+    <color name="transparent">@android:color/transparent</color>
+    <color name="semi_transparent">#AAFFFFFF</color>
+    <color name="dark_semi_transparent">#44000000</color>
+
+     <!--Top Bar-->
+    <color name="top_bg_color">@color/yellow_regular</color>
+    <color name="top_but_color">@color/yellow_light</color>
+    <color name="top_text_color">@color/colorBlack</color>
+
+    <color name="yellow_dark">#ffd503</color>
+    <color name="yellow_regular">#ffd503</color>
+    <color name="yellow_light">#fff664</color>
+    <color name="grey_dark">#211d21</color>
+    <color name="grey_regular">#434343</color>
+    <color name="grey_light">#e5e5e5</color>
+    <color name="grey_white">#f5f5f5</color>
+
+    <!-- Questionnaire Colors -->
+    <color name="es_edit_text_bg_stoke_color">@color/colorGray</color>
+    <color name="question_title">#373737</color>
+
+
+
+</resources>

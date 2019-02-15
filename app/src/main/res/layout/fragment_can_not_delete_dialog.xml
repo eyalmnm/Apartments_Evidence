@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/dialog_window_width"
+    android:layout_height="@dimen/dialog_window_height"
+    android:background="@drawable/dialog_background_shape"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="@dimen/dialog_padding">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:src="@drawable/ic_atentie2" />
+
+    <TextView
+        android:id="@+id/messageTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:layout_marginLeft="@dimen/nested_building_failure_main_image_margin_top"
+        android:layout_marginRight="@dimen/nested_building_failure_main_image_margin_top"
+        android:layout_marginTop="15dp"
+        android:gravity="center"
+        android:lines="3"
+        android:text="@string/nested_building_floor_can_not_be_deleted"
+        android:textColor="@color/grey_regular"
+        android:textSize="@dimen/dialog_message_text_size"
+        android:textStyle="bold" />
+
+</LinearLayout>

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/nested_building_new_floor_bg_shape"
+    android:theme="@style/AppThemeNestedBuilding">
+
+    <TextView
+        android:id="@+id/titleTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/nested_building_new_floor_title_margin_top"
+        android:background="@color/nested_building_new_floor_bg_color"
+        android:text="@string/nested_building_new_entrance_title"
+        android:textColor="@color/nested_building_new_floor_text_color"
+        android:textSize="@dimen/nested_building_new_floor_title_size"
+        android:textStyle="bold" />
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/nestedBuildingNewEntranceTextInputLayout"
+        android:layout_width="@dimen/nested_building_new_floor_name_width"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/titleTextView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/nested_building_new_floor_title_edit_text_margin_bottom"
+        android:layout_marginTop="@dimen/nested_building_new_floor_title_edit_text_margin_top"
+        android:background="@drawable/nested_building_new_floor_edit_text_bg_shape"
+        android:theme="@style/TextLabel">
+
+        <EditText
+            android:id="@+id/nestedBuildingNewEntranceEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:hint="@string/nested_building_new_floor_name_hint_text"
+            android:imeOptions="actionNext"
+            android:inputType="text"
+            android:maxLines="1" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/nestedBuildingNewEntranceNumberOfFloorsInputLayout"
+        android:layout_width="@dimen/nested_building_new_floor_name_width"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/nestedBuildingNewEntranceTextInputLayout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/nested_building_new_floor_title_edit_text_margin_bottom"
+        android:background="@drawable/nested_building_new_floor_edit_text_bg_shape"
+        android:theme="@style/TextLabel">
+
+        <EditText
+            android:id="@+id/nestedBuildingNewEntranceNumberOfFloorsEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:hint="@string/nested_building_new_entrance_floors_number_hint_text"
+            android:imeOptions="actionSend"
+            android:inputType="number"
+            android:maxLines="1" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <Button
+        android:id="@+id/nestedBuildingNewEntranceOkButton"
+        android:layout_width="@dimen/nested_building_new_floor_dialog_button_width"
+        android:layout_height="wrap_content"
+        android:minHeight="@dimen/nested_building_new_floor_dialog_button_min_height"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/nested_building_new_floor_title_margin_top"
+        android:layout_marginLeft="@dimen/nested_building_new_floor_title_margin_top"
+        android:background="@drawable/nested_building_new_floor_ok_button_bg_shape"
+        android:text="Ok"
+        android:textAllCaps="true"
+        android:textColor="@color/nested_building_new_floor_text_color"
+        android:textSize="@dimen/nested_building_new_floor_dialog_button_text_size" />
+
+    <Button
+        android:id="@+id/nestedBuildingNewEntranceCancelButton"
+        android:layout_width="@dimen/nested_building_new_floor_dialog_button_width"
+        android:layout_height="wrap_content"
+        android:minHeight="@dimen/nested_building_new_floor_dialog_button_min_height"
+        android:layout_alignBaseline="@id/nestedBuildingNewFloorOkButton"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="@dimen/nested_building_new_floor_title_margin_top"
+        android:layout_marginRight="@dimen/nested_building_new_floor_title_margin_top"
+        android:background="@drawable/nested_building_new_floor_cancel_button_bg_shape"
+        android:text="@android:string/cancel"
+        android:textAllCaps="true"
+        android:textColor="@color/nested_building_new_floor_text_color"
+        android:textSize="@dimen/nested_building_new_floor_dialog_button_text_size" />
+
+</RelativeLayout>

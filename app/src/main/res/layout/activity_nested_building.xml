@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+    <!--Top Bar-->
+    <RelativeLayout
+        android:id="@+id/buildingsHeaderRootView"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/top_bar_height"
+        android:paddingLeft="@dimen/top_bar_margin"
+        android:paddingRight="@dimen/top_bar_margin"
+        android:background="@color/transparent">
+
+        <!--Top left-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/transparent">
+
+            <LinearLayout
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/transparent">
+
+                <!-- City name Text View -->
+                <TextView
+                    style="@style/TopBarTextBut"
+                    android:id="@+id/buildingsCityNameTextView"
+                    android:maxLength="@integer/top_bar_city_max_char"
+                    tools:text="Chisinau" />
+
+                <!-- Little white arrow -->
+                <include layout="@layout/top_bar_arrow"/>
+
+                <!-- Street Name Text View -->
+                <TextView
+                    style="@style/TopBarTextBut"
+                    android:id="@+id/buildingsStreetNameTextView"
+                    android:maxLength="@integer/top_bar_street_max_char"
+                    tools:text="Stefan Cel Mare" />
+
+                <!-- Little white arrow -->
+                <include layout="@layout/top_bar_arrow"/>
+
+                <!-- Building number -->
+                <TextView
+                    style="@style/TopBarTextBut"
+                    android:id="@+id/buildingsBuildingNumberTextView"
+                    android:backgroundTint="@color/colorWhite"
+                    android:maxLength="@integer/top_bar_build_max_char"
+                    tools:text="158 / 3" />
+
+                <!-- Info icon -->
+                <ImageView
+                    android:id="@+id/buildingsInfoImageView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/top_bar_spacer"
+                    android:src="@drawable/ic_i_off" />
+
+                <!-- Edit icon -->
+                <ImageView
+                    android:id="@+id/buildingsEditImageView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/top_bar_spacer"
+                    android:src="@drawable/ic_crei_off" />
+
+            </LinearLayout>
+        </RelativeLayout>
+
+        <!--Top right-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/transparent">
+
+            <LinearLayout
+                android:gravity="end|center_vertical"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/transparent">
+
+                <!-- No Wifi -->
+                <ImageView
+                    android:id="@+id/buildingsNoGpsWarningImageView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/top_bar_margin"
+                    android:background="@color/transparent"
+                    android:src="@drawable/ic_location_off" />
+
+                <!-- No GPS reception warning icon -->
+                <ImageView
+                    android:id="@+id/buildingsNoCellularWarningImageView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/top_bar_margin"
+                    android:background="@color/transparent"
+                    android:src="@drawable/ic_signal_wifi_off" />
+
+                <!-- User Ico -->
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/top_bar_user_ico_margin"
+                    android:background="@color/transparent"
+                    android:src="@drawable/ic_user" />
+
+                <!-- User Name Text View -->
+                <TextView
+                    android:id="@+id/buildingsUserNameTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/top_bar_margin"
+                    android:background="@color/transparent"
+                    android:ellipsize="marquee"
+                    android:gravity="center_vertical"
+                    android:singleLine="true"
+                    android:maxLength="@integer/top_bar_user_name_max_char"
+                    android:textColor="@color/cities_user_text_color"
+                    android:textSize="@dimen/cities_user_text_size"
+                    tools:text="test@test.com"/>
+
+                <!-- Exit Icon -->
+                <ImageView
+                    android:id="@+id/buildingsLogoutIcon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="@color/transparent"
+                    android:src="@drawable/ic_exit" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+    <!-- End of Top Bar -->
+
+
+    <!-- Building scheme's View -->
+    <RelativeLayout
+        android:id="@+id/nestedBuildingMainView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorWhite"
+        android:theme="@style/AppThemeNestedBuilding">
+
+
+        <!-- Main View - TwoDScrollView -->
+        <FrameLayout
+            android:id="@+id/containerFrameLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/central_hider_width"
+            android:layout_marginBottom="@dimen/central_hider_width"
+            android:background="@color/colorWhite">
+
+            <RelativeLayout
+                android:id="@+id/container"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="bottom"
+                android:gravity="bottom" />
+
+        </FrameLayout>
+
+        <View
+            android:layout_width="@dimen/central_hider_width"
+            android:layout_height="match_parent"
+            android:background="@color/colorWhite"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/central_hider_width"
+            android:background="@color/colorWhite"
+            android:layout_alignParentBottom="true"/>
+
+        <!-- Vertical Scroller - Regular -->
+        <md.starlab.apartmentsevidenceapp.ui_widgets.scrollers.MyVerticalScrollView
+            android:id="@+id/nestedBuildingVerticalScrollView"
+            android:layout_width="@dimen/nested_border_panel_small"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_marginBottom="@dimen/scroller_start_horizontal_margin"
+            android:visibility="visible" />
+
+        <!-- Horizontal Scroller - Regular -->
+        <md.starlab.apartmentsevidenceapp.ui_widgets.scrollers.MyHorizontalScrollView
+            android:id="@+id/nestedBuildingHorizontalScrollView"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/nested_border_panel_small"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="@dimen/scroller_start_margin"
+            android:visibility="visible" />
+
+        <!-- Vertical Scroller - Edit -->
+        <md.starlab.apartmentsevidenceapp.ui_widgets.scrollers.MyVerticalScrollView
+            android:id="@+id/nestedBuildingVerticalEditScrollView"
+            android:layout_width="@dimen/nested_border_panel_small"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_marginBottom="@dimen/scroller_start_horizontal_margin"
+            android:visibility="invisible" />
+
+        <!-- Horizontal Scroller - Edit -->
+        <md.starlab.apartmentsevidenceapp.ui_widgets.scrollers.MyHorizontalScrollView
+            android:id="@+id/nestedBuildingHorizontalEditScrollView"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/nested_border_panel_small"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="@dimen/scroller_start_margin"
+            android:visibility="invisible" />
+
+    </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

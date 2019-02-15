@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/root_view"
+        android:layout_width="@dimen/foot_new_app_item_width"
+        android:layout_height="@dimen/foot_panel_height"
+        android:gravity="end"
+        android:orientation="horizontal">
+    <TextView
+        android:id="@+id/item_counter_title"
+        android:layout_width="@dimen/foot_title_text_width"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text=""
+        android:textSize="@dimen/foot_title_text_size"
+        android:textColor="@color/colorWhite"/>
+
+    <View
+        android:layout_width="2dp"
+        android:layout_height="match_parent"
+        android:background="@color/footer_devider_color" />
+
+    <ImageButton
+        android:id="@+id/dec_button"
+        android:layout_width="@dimen/foot_panel_height"
+        android:layout_height="match_parent"
+        android:background="@color/transparent"
+        android:src="@drawable/ic_simple_arrow"  />
+
+    <TextView
+        android:id="@+id/item_counter_value"
+        android:layout_width="@dimen/foot_value_text_width"
+        android:layout_height="match_parent"
+        android:background="@color/footer_value_bg_color"
+        android:gravity="center"
+        android:lines="1"
+        android:textSize="@dimen/foot_value_text_size"
+        android:text=""
+        android:textStyle="bold" />
+
+    <ImageButton
+        android:id="@+id/inc_button"
+        android:layout_width="@dimen/foot_panel_height"
+        android:layout_height="match_parent"
+        android:background="@color/transparent"
+        android:rotation="180"
+        android:src="@drawable/ic_simple_arrow" />
+
+</LinearLayout>
+</RelativeLayout>

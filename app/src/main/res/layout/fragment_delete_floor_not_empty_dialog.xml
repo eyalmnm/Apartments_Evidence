@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/nested_building_new_floor_bg_shape">
+
+    <ImageView
+        android:id="@+id/closeButton"
+        android:layout_width="@dimen/building_info_close_icon_size"
+        android:layout_height="@dimen/building_info_close_icon_size"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_margin="20dp"
+        android:src="@color/transparent" />
+
+    <ImageView
+        android:id="@+id/mainImage"
+        android:layout_width="@dimen/building_info_warning_icon_size"
+        android:layout_height="@dimen/building_info_warning_icon_size"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/nested_building_failure_main_image_margin_top"
+        android:background="@color/transparent"
+        android:src="@drawable/ic_atentie2" />
+
+    <TextView
+        android:id="@+id/messageTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/mainImage"
+        android:layout_margin="@dimen/nested_building_failure_main_image_margin_top"
+        android:background="@color/transparent"
+        android:gravity="center"
+        android:lines="2"
+        android:maxLines="2"
+        android:text="Message"
+        android:textSize="@dimen/nested_building_failure_message_text_size" />
+
+</RelativeLayout>

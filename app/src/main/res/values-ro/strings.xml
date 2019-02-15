@@ -1,0 +1,88 @@
+<resources>
+
+    <string name="app_name">ApartmentsEvidenceApp</string>
+
+    <!-- Splash -->
+    <string name="app_version_format" translatable="false">Version v %s (%d) </string>
+    <string name="must_garnt_permission">In order to avoid malfunctioning of the application, you must grand all requested permissions!</string>
+    <string name="returned_from_app_settings_to_activity">
+        Returned from app settings to MainActivity with the following permissions:
+        \nLocation: %s
+    </string>
+    <string name="yes">Da</string>
+    <string name="no">Nu</string>
+    <string name="splash_login_string">LOGIN</string>
+
+    <!-- questionnaires Screen Strings -->
+    <string name="title_activity_questionnaire">QuestionnaireActivity</string>
+    <string name="choose_questionnaire">Choose questionnaire:</string>
+    <string name="questionnaireTopBaraTitle">Questionnaire Top Bar Title</string>
+    <string name="questionnaire_add_Attachment_button_text">+ Add File</string>
+    <string name="browse">Browse</string>
+    <string name="failed_to_bumit_questionnaire">Failed to submit questionnaire</string>
+    <string name="failed_to_upload_file">Failed to upload file %s</string>
+    <string name="question_attach_hint">Întoduceți denumirea pentru atașament</string>
+
+    <!--Login errors-->
+    <string name="errorLogin">Datele întroduse sunt nevalide</string>
+    <string name="errorConnection">Verificați conecțiunea Internetului</string>
+
+    <!-- Exit dialog Strings -->
+    <string name="exit_title">Exit</string>
+    <string name="exit_message">Sunteți sigur doriți să ieșiți?</string>
+
+    <!-- Login Screen Strings -->
+    <string name="user_email_hint">Enter your Email</string>
+    <string name="user_password_hint">Enter your password</string>
+    <string name="login_label">Login</string>
+    <string name="user_email_label">User Email</string>
+    <string name="user_password_label">User Password</string>
+    <string name="login_user_name_hint_text">Întroduceți email</string>
+    <string name="login_form_title_string">LOGIN</string>
+    <string name="login_confirm_button_text">Confirm</string>
+    <string name="login_password_hint_text">Întroduceți parola</string>
+    <string name="login_missing_data_message">Missing data! please enter user name and password.</string>
+    <string name="login_error_message">Error occurs: %s. Please try again!</string>
+    <string name="login_not_staff_message">You are not allowed to proceed. Please check your system permissions.</string>
+    <string name="login_success_message">Login success.</string>
+
+    <!-- Cities Screen String -->
+    <string name="cities_error_message">Error occurs: %s. Please try again later!</string>
+
+    <!-- Nested Building Screen String -->
+    <string name="nested_building_edit_apartment">Edit Apartment</string>
+    <string name="nested_building_edit_entrance">Edit Entrance</string>
+    <string name="nested_building_edit_floor">Edit Floor</string>
+    <string name="nested_building_apartment_editor_entrance_title">Entrance</string>
+    <string name="nested_building_apartment_editor_floor_title">Floor</string>
+    <string name="nested_building_apartment_editor_apartment_title">Apartment</string>
+    <string name="nested_building_floor_editor_all_title">All</string>
+    <string name="nested_building_apartment_editor_move_title">Move</string>
+    <string name="nested_building_apartment_editor_delete_button">Del</string>
+    <string name="apartment_history_header_title">ISTORIA ACȚIUNILOR</string>
+    <string name="apartment_transaction_history_header_title">ACȚIUNI</string>
+    <string name="nested_building_new_floor_title">Add Floor</string>
+    <string name="nested_building_new_floor_name_hint_text">Title</string>
+    <string name="nested_building_new_entrance_title">Add Entrance</string>
+    <string name="nested_building_new_entrance_floors_number_hint_text">Number of floors</string>
+    <string name="nested_building_apartment_add_failure_msg">Failed to add apartment %s in floor %s</string>
+    <string name="nested_building_apartment_move_failure_msg">Failed to move apartment %s in floor %s</string>
+    <string name="nested_building_floor_failure_msg">Failed to add floor %s to entrances:\n %s</string>
+    <string name="nested_building_floor_in_entrance_failure_msg">Failed to add floor %s in entrance %s</string>
+    <string name="nested_building_apartment_delete_failure_msg">Failed to delete apartment %s</string>
+    <string name="nested_building_floor_delete_failure_msg">Failed to delete floor %s</string>
+    <string name="nested_building_entrance_failure_msg">Failed to add entrance %s</string>
+    <string name="nested_building_entrance_delete_failure_msg">Failed to delete entrance %s</string>
+    <string name="no_state">No state</string>
+    <string name="no_state_item_color">#FFFFFF</string>
+    <string name="nested_building_delete_floor_not_empty_message">Floor not Empty! You can not delete a floor that is not empty.</string>
+    <string name="nested_building_delete_apartment_warning">You are about deleting apartment. Do you want to proceed with deleting this apartment?</string>
+    <string name="nested_building_delete_floor_empty_warning">You are about deleting floor. Do you want to proceed with deleting this floor?</string>
+    <string name="nested_building_delete_entrance_not_empty_message">Entrance not Empty! You can not delete an entrance that is not empty.</string>
+    <string name="nested_building_delete_entrance_empty_warning">You are about deleting entrance. Do you want to proceed with deleting this entrance?</string>
+    <string name="nested_building_floor_can_not_be_deleted">Acest obiect nu poate fi șters. Apartamentele acestui obiect sînt ascunse</string>
+
+
+    <string name="attachment_title">Attachment</string>
+
+</resources>

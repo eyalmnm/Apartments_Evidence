@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:theme="@style/AppTheme">
+
+    <!--Top Bar-->
+    <RelativeLayout
+        android:id="@+id/buildingsHeaderRootView"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/top_bar_height"
+        android:paddingLeft="@dimen/top_bar_margin"
+        android:paddingRight="@dimen/top_bar_margin"
+        android:background="@color/transparent">
+
+        <!--Top left-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/transparent">
+
+            <LinearLayout
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/transparent">
+
+                <!-- City name Text View -->
+                <TextView
+                    style="@style/TopBarTextBut"
+                    android:id="@+id/buildingsCityNameTextView"
+                    android:maxLength="@integer/top_bar_city_max_char"
+                    tools:text="Chisinau" />
+
+                <!-- Little white arrow -->
+                <include layout="@layout/top_bar_arrow"/>
+
+                <!-- Street Name Text View -->
+                <TextView
+                    style="@style/TopBarTextBut"
+                    android:id="@+id/buildingsStreetNameTextView"
+                    android:backgroundTint="@color/colorWhite"
+                    android:maxLength="@integer/top_bar_street_max_char"
+                    tools:text="Stefan Cel Mare" />
+
+                <!--&lt;!&ndash; Little white arrow &ndash;&gt;-->
+                <!--<include layout="@layout/top_bar_arrow"/>-->
+
+                <!--&lt;!&ndash; Building number &ndash;&gt;-->
+                <!--<TextView-->
+                    <!--style="@style/TopBarTextBut"-->
+                    <!--android:id="@+id/buildingsBuildingNumberTextView"-->
+                    <!--android:maxLength="@integer/top_bar_build_max_char"-->
+                    <!--tools:text="158 / 3" />-->
+
+                <!--&lt;!&ndash; Little white arrow &ndash;&gt;-->
+                <!--<include layout="@layout/top_bar_arrow"/>-->
+
+                <!--<TextView-->
+                    <!--style="@style/TopBarTextBut"-->
+                    <!--android:id="@+id/buildingsApartmentNumberTextView"-->
+                    <!--android:background="@drawable/building_street_name_bg_shape"-->
+                    <!--android:maxLength="@integer/top_bar_app_max_char"-->
+                    <!--tools:text="App. 2000 ABC" />-->
+            </LinearLayout>
+        </RelativeLayout>
+
+        <!--Top right-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/transparent">
+
+            <LinearLayout
+                android:gravity="end|center_vertical"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/transparent">
+
+                <!-- No Wifi -->
+                <ImageView
+                    android:id="@+id/buildingsNoGpsWarningImageView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/top_bar_margin"
+                    android:background="@color/transparent"
+                    android:src="@drawable/ic_location_off" />
+
+                <!-- No GPS reception warning icon -->
+                <ImageView
+                    android:id="@+id/buildingsNoCellularWarningImageView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/top_bar_margin"
+                    android:background="@color/transparent"
+                    android:src="@drawable/ic_signal_wifi_off" />
+
+                <!-- User Ico -->
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/top_bar_user_ico_margin"
+                    android:background="@color/transparent"
+                    android:src="@drawable/ic_user" />
+
+                <!-- User Name Text View -->
+                <TextView
+                    android:id="@+id/buildingsUserNameTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/top_bar_margin"
+                    android:background="@color/transparent"
+                    android:ellipsize="marquee"
+                    android:gravity="center_vertical"
+                    android:singleLine="true"
+                    android:maxLength="@integer/top_bar_user_name_max_char"
+                    android:textColor="@color/cities_user_text_color"
+                    android:textSize="@dimen/cities_user_text_size"
+                    tools:text="test@test.com"/>
+
+                <!-- Exit Icon -->
+                <ImageView
+                    android:id="@+id/buildingsLogoutIcon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="@color/transparent"
+                    android:src="@drawable/ic_exit" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+    <!-- End of Top Bar -->
+
+
+    <!-- Buildings Grid RecyclerView -->
+    <md.starlab.apartmentsevidenceapp.ui_widgets.buildings.BuildingsGridRecyclerView
+        android:id="@+id/buildingsGridRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/colorWhite" />
+
+</LinearLayout>

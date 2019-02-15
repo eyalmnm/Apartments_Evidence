@@ -1,0 +1,5 @@
+<vector android:height="@dimen/exit_button_height" android:viewportHeight="70"
+    android:viewportWidth="70" android:width="@dimen/exit_button_height" xmlns:android="http://schemas.android.com/apk/res/android">
+    <path android:fillColor="@color/yellow_light" android:pathData="M35,35m-35,0a35,35 0,1 1,70 0a35,35 0,1 1,-70 0"/>
+    <path android:fillColor="#212121" android:fillType="evenOdd" android:pathData="M37.46,46.375h-9.76a1.082,1.082 0,0 1,-1.08 -1.087L26.62,25.713a1.082,1.082 0,0 1,1.08 -1.087h9.76a1.088,1.088 0,0 0,0 -2.175h-9.76a3.261,3.261 0,0 0,-3.25 3.263L24.45,45.288a3.261,3.261 0,0 0,3.25 3.263h9.76A1.088,1.088 0,0 0,37.46 46.375ZM50.23,34.726 L43.64,28.201a1.085,1.085 0,1 0,-1.52 1.549l4.7,4.663L34.2,34.413a1.088,1.088 0,0 0,0 2.175h12.62l-4.7,4.663a1.087,1.087 0,0 0,-0.02 1.538,1.113 1.113,0 0,0 0.78,0.324 1.083,1.083 0,0 0,0.76 -0.313l6.59,-6.525A1.1,1.1 0,0 0,50.23 34.726Z"/>
+</vector>

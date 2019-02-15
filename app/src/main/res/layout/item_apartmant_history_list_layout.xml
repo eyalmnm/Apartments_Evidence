@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/apartment_history_item_height"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/history_item_background_shape"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:theme="@style/AppThemeNoBg">
+
+    <ImageView
+        android:id="@+id/apartmentHistoryStatusCircleImageView"
+        android:layout_width="@dimen/apartment_history_item_circle"
+        android:layout_height="@dimen/apartment_history_item_circle"
+        android:layout_margin="@dimen/apartment_history_item_circle_margin"
+        android:background="@drawable/history_item_circle" />
+
+    <TextView
+        android:id="@+id/apartmentHistoryDateTextView"
+        android:layout_width="@dimen/apartment_history_item_date_width"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/apartment_history_item_date_text_margin"
+        android:background="@color/transparent"
+        android:textColor="@color/apartment_history_header_text_color"
+        android:textSize="@dimen/apartment_history_item_title_text_size"
+        tools:text="21.05.17"/>
+
+    <TextView
+        android:id="@+id/apartmentHistoryDescriptionTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/apartment_history_item_date_text_margin"
+        android:layout_marginRight="@dimen/apartment_history_item_date_text_margin"
+        android:layout_weight="1"
+        android:background="@color/transparent"
+        android:textColor="@color/apartment_history_header_text_color"
+        android:textSize="@dimen/apartment_history_item_title_text_size"
+        tools:text="Cerere de conectare a serviciilor StarNet"/>
+
+</LinearLayout>

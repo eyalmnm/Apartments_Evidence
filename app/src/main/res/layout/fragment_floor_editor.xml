@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fragment_apartment_editor_bg_layer_list"
+    android:orientation="horizontal"
+    android:theme="@style/fragment_apartment_editor_style"
+    android:weightSum="3">
+
+    <!-- Entrance -->
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="2">
+
+        <TextView
+            android:id="@+id/entranceViewTitleTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:text="@string/nested_building_apartment_editor_entrance_title"
+            android:textColor="@color/colorBlack"
+            android:textSize="30sp" />
+
+        <md.starlab.apartmentsevidenceapp.ui_widgets.itemcounterview.CounterView
+            android:id="@+id/entranceEditorEntranceItemCounter"
+            android:layout_width="400dp"
+            android:layout_height="400dp"
+            android:layout_below="@id/entranceViewTitleTextView"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            app:border_color="@color/nested_building_edit_window_bg_color"
+            app:border_width="5dp"
+            app:counterValueColor="@color/colorBlack"
+            app:dec_icon="@drawable/ic_remove"
+            app:inc_icon="@drawable/ic_plus"
+            app:textBackgroundColor="@drawable/counter_text_background_shape" />
+
+        <CheckBox
+            android:id="@+id/entranceEditorEntranceAllCheckBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/entranceEditorEntranceItemCounter"
+            android:text="@string/nested_building_floor_editor_all_title"
+            android:textColor="@color/colorBlack"
+            android:textSize="30sp"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/colorWhite" />
+
+    <!-- Floor -->
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/floorViewTitleTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:text="@string/nested_building_apartment_editor_floor_title"
+            android:textColor="@color/colorBlack"
+            android:textSize="30sp" />
+
+        <EditText
+            android:id="@+id/entranceEditorFloorEditText"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@drawable/counter_text_background_shape"
+            android:maxLines="1"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:textSize="30sp" />
+
+        <Button
+            android:id="@+id/entranceEditorOkButton"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignBottom="@id/entranceEditorFloorEditText"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="10dp"
+            android:layout_toRightOf="@id/entranceEditorFloorEditText"
+            android:background="@drawable/green_ok_button_background_shape"
+            android:gravity="left|bottom"
+            android:padding="3dp"
+            android:text="Ok"
+            android:textAllCaps="true"
+            android:textColor="@color/colorWhite"
+            android:textSize="24sp" />
+    </RelativeLayout>
+
+
+</LinearLayout>

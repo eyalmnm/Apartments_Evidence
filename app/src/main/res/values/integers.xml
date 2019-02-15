@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="top_bar_city_max_char">14</integer>
+    <integer name="top_bar_street_max_char">32</integer>
+    <integer name="top_bar_build_max_char">10</integer>
+    <integer name="top_bar_app_max_char">16</integer>
+    <integer name="top_bar_user_name_max_char">32</integer>
+</resources>

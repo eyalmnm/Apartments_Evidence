@@ -1,0 +1,78 @@
+{
+  "id": "f00f1bd8-1230-4403-9ceb-6b04e2c3b429",
+  "number": "19/1",
+  "longitude": 47.21,
+  "latitude": 27.2,
+  "entrances": [
+    {
+      "id": "f47b5d6b-294f-4343-99f5-799338b75fb1",
+      "number": 1,
+      "floors": [
+        {
+          "id": "1f723841-cfd3-4e36-bf7f-65f3087608f6",
+          "number": "1",
+          "apartments": [
+            {
+              "id": "87bcb466-4166-49a8-b0db-a4ef5241a6cf",
+              "number": "1"
+            },
+            {
+              "id": "5a587496-e6ab-4ce3-bc07-3039bbc1f45d",
+              "number": "2"
+            },
+            {
+              "id": "ec8e566f-3072-49e4-b2f5-c42f1534511d",
+              "number": "3"
+            }
+          ]
+        },
+        {
+          "id": "5672419c-d1f9-4553-958d-de3277d42580",
+          "number": "2",
+          "apartments": [
+            {
+              "id": "4aeb99b4-f0c4-425a-a7d9-bb0941f5c0e9",
+              "number": "11"
+            },
+            {
+              "id": "7e2dd7fa-2af9-44f8-923b-f514e1b51df9",
+              "number": "12"
+            },
+            {
+              "id": "eeacdc37-329d-42bc-a45c-a0ff7ec804f8",
+              "number": "13"
+            }
+          ]
+        },
+        {
+          "id": "5ee78c1b-de7b-46bc-84c2-8cd521c6aba7",
+          "number": "3",
+          "apartments": [
+            {
+              "id": "e30d0369-6edf-4ea0-bb4e-d93539e89dcc",
+              "number": "21"
+            },
+            {
+              "id": "a1d3c770-e0bc-4e54-a13a-58d6736e8ba1",
+              "number": "22"
+            },
+            {
+              "id": "46d7d510-b80d-4448-b5d8-db3e554629e5",
+              "number": "23"
+            }
+          ]
+        },
+        {
+          "id": "03fe37c2-a107-4c9a-810e-0c2bde578eb1",
+          "number": "4",
+          "apartments": [
+            {
+              "id": "4d134936-2a9b-406d-abd3-557501c0647e",
+              "number": "31"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

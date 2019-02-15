@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center_horizontal">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/floorsRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/entranceTitleContainer" />
+
+    <TextView
+        android:id="@+id/empty_view"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/add_floor_text_view_height"
+        android:gravity="center"
+        android:background="@drawable/horizontal_edit_scroll_add_floor_background_shape"
+        android:layout_marginLeft="@dimen/nested_building_floor_card_padding"
+        android:layout_marginRight="@dimen/nested_building_floor_card_padding"
+        android:layout_above="@+id/entranceTitleContainer"/>
+
+    <LinearLayout
+        android:id="@+id/entranceTitleContainer"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/horizontal_edit_scroll_title_container_height"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:gravity="center_vertical"
+        android:background="@drawable/horizontal_edit_scroll_title_background_shape"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="@dimen/nested_building_floor_card_padding"
+        android:layout_marginRight="@dimen/nested_building_floor_card_padding">
+
+        <TextView
+            android:id="@+id/entranceTitleTextView"
+            android:layout_width="@dimen/entrance_edit_dialog_title_width"
+            android:layout_height="@dimen/horizontal_edit_scroll_title_container_height"
+            android:gravity="center"
+            android:text="Title"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/entrance_edit_dialog_title_text_size"
+            android:textStyle="bold"
+            android:textAllCaps="true"
+            android:paddingLeft="@dimen/entrance_edit_dialog_title_text_padding"
+            />
+        <ImageView
+            android:id="@+id/deleteEntranceImageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_recycle_bin_foot"
+            android:padding="@dimen/entrance_mini_trash_padding"/>
+
+    </LinearLayout>
+</RelativeLayout>

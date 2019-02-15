@@ -1,0 +1,136 @@
+<resources>
+
+    <!-- Base application theme -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:fontFamily">@font/open_sans</item>
+        <item name="fontFamily">@font/open_sans</item>
+    </style>
+
+    <!-- Base application theme no Background -->
+    <style name="AppThemeNoBg" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="fontFamily">@font/open_sans</item>
+        <item name="android:background">@color/transparent</item>
+        <item name="android:fontFamily">@font/open_sans</item>
+    </style>
+
+    <!-- Base application theme -->
+    <style name="AppThemeNestedBuilding" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:fontFamily">@font/open_sans</item>
+        <item name="fontFamily">@font/open_sans</item>
+    </style>
+
+    <!-- Splash Screen Style -->
+    <style name="SplashScreenTheme" parent="Theme.AppCompat.NoActionBar">
+        <item name="windowNoTitle">true</item>
+        <item name="android:colorPrimary">@color/colorWhite</item>
+        <item name="android:background">@drawable/splash_bg</item>
+        <item name="fontFamily">@font/open_sans</item>
+        <item name="android:fontFamily">@font/open_sans</item>
+    </style>
+
+    <!-- TextView Style -->
+    <style name="AppTextView">
+        <item name="android:textColor">@color/textColorPrimary</item>
+        <item name="android:background">@color/colorPrimary</item>
+        <item name="android:textAppearance">?android:attr/textAppearanceMedium</item>
+        <item name="fontFamily">@font/open_sans</item>
+        <item name="android:fontFamily">@font/open_sans</item>
+    </style>
+
+    <style name="FormStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:padding">@dimen/horizontal_padding</item>
+        <item name="fontFamily">@font/open_sans</item>
+        <item name="android:fontFamily">@font/open_sans</item>
+    </style>
+
+    <style name="ButtonStyle" parent="@style/FormStyle">
+        <item name="android:minWidth">200dp</item>
+        <item name="android:textColor">@color/colorBlack</item>
+        <item name="android:textSize">@dimen/text_size_2.25x</item>
+        <item name="android:background">@drawable/enabled_button_bg</item>
+    </style>
+
+    <!-- Login Components Style -->
+    <!-- Login Edit Text Style -->
+    <style name="LoginEditTextStyle" parent="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="boxCornerRadiusBottomEnd">20dp</item>
+        <item name="boxCornerRadiusBottomStart">20dp</item>
+        <item name="boxCornerRadiusTopStart">20dp</item>
+        <item name="boxCornerRadiusTopEnd">20dp</item>
+        <item name="boxBackgroundColor">@color/login_edit_text_bg_color</item>
+        <item name="boxStrokeColor">@color/login_box_stroke_color</item>
+        <item name="boxStrokeWidth">5dp</item>
+        <item name="colorControlHighlight">@color/login_highlight_edit_text_color</item>
+        <item name="android:textColor">@color/login_edit_text_text_color</item>
+        <item name="colorAccent">@color/login_accent_edit_text_color</item>
+        <item name="colorControlNormal">@color/login_normal_edit_text_color</item>
+        <item name="colorControlActivated">@color/login_active_edit_text_color</item>
+        <item name="android:textColorHint">@color/login_hint_text_color</item>
+        <item name="fontFamily">@font/open_sans</item>
+        <item name="android:fontFamily">@font/open_sans</item>
+    </style>
+
+    <!-- Nested Building editor Radio Button Style -->
+    <style name="BuildingEditorSelectorRadioButton" parent="@android:style/Widget.CompoundButton.RadioButton">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">43dp</item>
+        <item name="android:layout_marginTop">5dp</item>
+        <item name="android:background">
+            @drawable/nested_building_editor_selector_radio_bg_selector
+        </item>
+        <item name="android:button">@null</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:paddingLeft">50dp</item>
+        <item name="fontFamily">@font/open_sans</item>
+        <item name="android:fontFamily">@font/open_sans</item>
+    </style>
+
+    <style name="fragment_apartment_editor_style">
+        <item name="colorPrimary">@color/colorWhite</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:fontFamily">@font/open_sans</item>
+        <item name="fontFamily">@font/open_sans</item>
+        <!--item name="android:background">@color/colorWhite</item-->
+    </style>
+
+    <style name="TextLabel" parent="@style/TextAppearance.AppCompat">
+        <!-- Hint color and label color in FALSE state -->
+        <item name="android:textColorHint">@color/textColorPrimary</item>
+        <item name="android:textSize">@dimen/login_input_title</item>
+        <item name="android:textColor">@color/login_edit_text_text_color</item>
+        <item name="android:background">@color/transparent</item>
+        <!-- Label color in TRUE state and bar color FALSE and TRUE State -->
+        <item name="colorAccent">@color/colorGreen</item>
+        <item name="colorControlNormal">@color/colorGray</item>
+        <item name="colorControlActivated">@color/colorGreen</item>
+        <item name="fontFamily">@font/open_sans</item>
+        <item name="android:fontFamily">@font/open_sans</item>
+    </style>
+
+    <style name="TopBarTextBut" parent="android:Widget.TextView">
+        <item name="android:textSize">@dimen/top_bar_text_size</item>
+        <item name="android:textColor">@color/buildings_city_name_text_color</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">@dimen/top_bar_but_height</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:background">@drawable/building_city_name_bg_shape</item>
+        <item name="android:gravity">center</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:paddingLeft">@dimen/top_bar_text_padding</item>
+        <item name="android:paddingRight">@dimen/top_bar_text_padding</item>
+        <item name="android:ellipsize">marquee</item>
+    </style>
+    
+</resources>

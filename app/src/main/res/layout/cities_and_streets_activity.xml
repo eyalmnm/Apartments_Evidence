@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/AppThemeNoBg"
+    android:background="@color/colorYellowGold"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- StarNet Logo -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center|end">
+        <ImageView
+            android:id="@+id/citiesStarNetLogoImageView"
+            android:layout_width="@dimen/login_logo_w"
+            android:layout_height="@dimen/login_logo_h"
+            android:src="@drawable/logo_bubble"
+            android:visibility="invisible"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/top_bar_height"
+        android:paddingLeft="@dimen/top_bar_margin"
+        android:paddingRight="@dimen/top_bar_margin"
+        android:gravity="end|center_vertical"
+        android:orientation="horizontal" >
+        <!-- User Ico -->
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/top_bar_user_ico_margin"
+            android:background="@color/transparent"
+            android:src="@drawable/ic_user" />
+
+        <!-- User Name Text View -->
+        <TextView
+            android:id="@+id/citiesUserNameTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/top_bar_margin"
+            android:background="@color/transparent"
+            android:ellipsize="marquee"
+            android:gravity="center_vertical"
+            android:singleLine="true"
+            android:maxLength="@integer/top_bar_user_name_max_char"
+            android:textColor="@color/cities_user_text_color"
+            android:textSize="@dimen/cities_user_text_size"
+            tools:text="test@test.com"/>
+
+        <!-- Exit Icon -->
+        <ImageView
+            android:id="@+id/citiesLogoutIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@color/transparent"
+            android:src="@drawable/ic_exit" />
+    </LinearLayout>
+
+    <!-- The moving white circle -->
+    <ImageView
+        android:id="@+id/citiesWhitCircleImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/transparent"
+        android:src="@drawable/white_circle"
+        android:visibility="invisible"/>
+
+    <!-- Cities and Streets ListView -->
+
+    <ExpandableListView
+        android:id="@+id/citiesListView"
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="50dp"
+        android:background="@color/transparent"
+        android:childDivider="@color/transparent"
+        android:choiceMode="singleChoice"
+        android:divider="@color/transparent"
+        android:dividerHeight="5dp"
+        android:groupIndicator="@android:color/transparent"
+        android:visibility="invisible" />
+
+</RelativeLayout>
